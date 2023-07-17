@@ -4,6 +4,12 @@
     --saffron: #e9c46aff;
     --sandy-brown: #f4a261ff;
     --burnt-sienna: #e76f51ff;
+    --raisin-black: #161925;
+    --black-olive: #30362F;
+    --hookers-green: #52796F;
+    --mountbatten-pink: #9E7682;
+    --yale-blue: #0D3B66;
+    --rose-red: #B33951;
 }
 
 * {
@@ -13,6 +19,7 @@
 body {
     background-color: var(--saffron);
     font-family: 'Fira Sans Condensed', sans-serif;
+    color: var(--charcoal);
     grid-template-areas: 
                         'header'
                         'nav'
@@ -24,28 +31,96 @@ body {
 
 header {
     grid-area: header;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--charcoal);
+    color: var(--saffron);
+}
+
+header h1,
+header p {
+    margin: 0;
 }
 
 nav {
     grid-area: nav;
+    font-size: .9rem;
+    font-weight: 600;
+    background-color: var(--rose-red);
+    color: var(--saffron);
+    padding: 0.25rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
 }
 
 main {
     grid-area: main;
+    padding: 0rem 1rem;
+    max-width: 475px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1.75rem auto;
+    background-color: var(--hookers-green);
+    color: var(--saffron);
+    width: 60%;
+    padding: .25rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+p, li {
+    font-size: .9rem;
+}
+
+#about-me ul,
+#connect ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#about-me li,
+#connect li {
+    margin: .5rem 0;
+    text-align: center;
 }
 
 footer {
     grid-area: footer;
+    background-color: var(--charcoal);
+    padding: .5rem;
+    height: 10vh;
+    margin-top: 1.75rem;
 }
 
 img {
-    border: 5px solid var(--burnt-sienna);
+    border: 5px solid var(--yale-blue);
     width: 90vw;
+    max-width: 450px;
 }
 
 #portfolio-container,
 .project-container {
     text-align: center;
+}
+
+.project-container {
+    margin-bottom: 1rem;
 }
 
 /* h1 {
