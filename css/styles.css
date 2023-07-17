@@ -140,6 +140,10 @@ footer {
     transform: scale(1.1);
 }
 
+nav li:hover {
+    transform: scale(1.1);
+}
+
 #portfolio-container,
 .project-container {
     text-align: center;
