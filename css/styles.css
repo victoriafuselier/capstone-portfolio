@@ -86,7 +86,7 @@ h2 {
 }
 
 section:not(:first-of-type) {
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
 h3 {
