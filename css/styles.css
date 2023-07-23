@@ -42,6 +42,14 @@ header {
     justify-content: center;
 }
 
+h1 {
+    font-size: 1.75rem;
+}
+
+header p {
+    font-size: .8rem;
+}
+
 header h1,
 header p {
     margin: 0;
@@ -54,7 +62,7 @@ nav li {
 }
 
 nav {
-    font-size: .9rem;
+    font-size: .75rem;
     font-weight: 600;
     background-color: var(--hookers-green);
     color: var(--saffron);
@@ -71,6 +79,8 @@ nav ul {
     padding: 0;
     list-style-type: none;
     justify-content: space-around;
+    max-width: 700px;
+    margin: 10px auto;
 }
 
 a {
@@ -80,22 +90,17 @@ a {
 }
 
 main {
-    padding: 0rem 1rem;
+    padding: 1rem;
     max-width: 475px;
     margin: 0 auto;
     grid-area: main;
 }
 
 h2 {
-    /* background-color: var(--rose-red); */
     color: var(--rose-red);
-    width: 60%;
-    padding: .25rem 0;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
-    margin: 1.5rem auto;
-    max-width: 180px;
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: 3px;
@@ -103,13 +108,19 @@ h2 {
     
 }
 
+#about {
+    max-width: 475px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 section:not(:first-of-type) {
-    margin-top: 1.5rem;
+    margin-top: 2.75rem;
 }
 
 h3 {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 
 p, li {
@@ -135,7 +146,9 @@ footer {
     grid-area: footer;
 }
 
-
+#portfolio-container {
+    margin: 2rem auto;
+}
 
 .project-container {
 	text-align: center;
@@ -156,7 +169,7 @@ footer {
 
 .project-photo a {
     color: var(--burnt-sienna);
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: underline;
     cursor: pointer;
     position: absolute;
@@ -197,7 +210,7 @@ footer {
 .photo-overlay p {
     font-size: 1rem;
     width: fit-content;
-    max-width: 90%;
+    max-width: 98%;
 }
 
 /* .project-container {
@@ -263,6 +276,7 @@ nav li:hover {
     flex-direction: row;
     align-items: center;
     height: 50px;
+    justify-content: center;
 }
 
 /* h1 {
@@ -300,7 +314,7 @@ nav li:hover {
     width: 90%;
 } */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     body {
         grid-template-columns: 100px auto;
         grid-template-rows: 100px auto 100px;
@@ -325,12 +339,12 @@ nav li:hover {
 
     #portfolio-container {
         width: 70%;
-        /* margin: 2rem auto 0;
+        margin: 2rem auto 0;
         display: flex;
         flex-direction: row;nav
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center; */
+        align-items: center;
     }
 
     .project-container {
@@ -343,12 +357,12 @@ nav li:hover {
         margin-top: unset;
     }
 
-    /* #portfolio-container {
+    #portfolio-container {
         display: grid;
         grid-template-columns: ;
-    } */
+    }
 
-    /* main {
+    main {
         max-width: unset;
         display: grid;
         grid-template-areas: 
@@ -369,7 +383,7 @@ nav li:hover {
 
     #connect {
         grid-area: connect
-    } */
+    }
 
     nav ul {
         flex-direction: column;
@@ -380,4 +394,49 @@ nav li:hover {
         margin-bottom: 40px;
     }
 
+} */
+
+
+/* ========================================================== 
+                        Float Clearfix
+============================================================= */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* ========================================================== 
+                        Media Queries
+============================================================= */
+
+@media (min-width: 769px) {
+    main {
+        max-width: 1200px;
+        padding: 1rem 3rem;
+    }
+
+    #portfolio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .project-container {
+		width: 40%;
+		float: left;
+	}
+}
+
+@media (min-width: 1025px) {
+    main {
+        max-width: 1300px;
+    }
+
+    .project-container {
+		width: 23%;
+		float: left;
+	}
 }
