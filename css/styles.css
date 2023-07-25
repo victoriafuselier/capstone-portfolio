@@ -445,7 +445,8 @@ textarea {
     transition: all 0.5s ease-out;
 }
 
-#send:focus {
+#send:focus,
+#send:hover {
     color: var(--hookers-green);
     background-color: white;
     border-color: var(--hookers-green);
