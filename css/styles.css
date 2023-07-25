@@ -107,13 +107,14 @@ nav li:hover {
     display: none;
 }
 
-main {
+main,
+#contact-container,
+#about {
+    max-width: 475px;
+    margin: 0 auto 2rem;
 }
 
-main,
-#contact-container {
-    max-width: 475px;
-    margin: 0 auto;
+#about {
     padding: 2rem 1rem 3rem;
 }
 
@@ -305,11 +306,12 @@ footer {
     border-radius: 8px;
     opacity: 0;
     transition-property: opacity;
-    transition-duration: .5s;
+    transition-duration: .25s;
     overflow: hidden;
 }
 
-.photo-overlay:focus {
+.photo-overlay:focus,
+.photo-overlay:hover {
     opacity: 1;
 }
 
@@ -321,10 +323,12 @@ footer {
 }
 
 .photo-overlay p {
-    font-size: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
     width: fit-content;
     max-width: 98%;
     text-align: center;
+    letter-spacing: 1px;
     margin: 0;
 }
 
@@ -334,12 +338,11 @@ footer {
 
 #contact-container {
     width: 100%;
-    background-image: url(../../capstone-portfolio/images/background-img.jpg);
+    background-image: url(../images/background-img.jpg);
     background-size: cover;
     border-radius: 50px;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    opacity: 0.6;
 }
 
 form {
@@ -350,6 +353,7 @@ form {
     max-width: 350px;
     margin: 0 auto;
     width: 95%;
+    border: 3px solid white;
 }
 
 form h2 {
