@@ -30,14 +30,15 @@
                 <div class="about-section-title">
                     <h3>Background</h3>
                     <p id="dropdown-arrow-background" class="dropdown-arrow">></p>
+                    <p id="up-arrow-background" class="up-arrow">></p>
                 </div>
                 <div class="hidden-info">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet nihil rerum dolorum commodi sint aut error officiis, ad, fuga labore deserunt laborum soluta dolorem earum quis, amet odio aperiam consectetur.</p>
-                    <p id="up-arrow-background" class="up-arrow">></p>
                 </div>
                 <div class="about-section-title">
                     <h3>Education</h3>
                     <p id="dropdown-arrow-education" class="dropdown-arrow">></p>
+                    <p id="up-arrow-education" class="up-arrow">></p>
                 </div>
                 <div class="hidden-info">
                     <ul id="education">
@@ -46,11 +47,11 @@
                         <li>Treehouse - Front-End Web Development Techdegree</li>
                         <li>asdfasdfasdf</li>
                     </ul>
-                    <p id="up-arrow-education" class="up-arrow">></p>
                 </div>
                 <div class="about-section-title">
                     <h3>Skills</h3>
                     <p id="dropdown-arrow-skills" class="dropdown-arrow">></p>
+                    <p id="up-arrow-skills" class="up-arrow">></p>
                 </div>
                 <div class="hidden-info">
                     <ul id="skills">
@@ -63,7 +64,6 @@
                         <li>a</li>
                         <li>a</li>
                     </ul>
-                    <p id="up-arrow-skills" class="up-arrow">></p>
                 </div>
             </div>
         </section>
@@ -155,16 +155,28 @@
         <section id="contact" class="clearfix">
             <h2>Connect</h2>
             <div id="contact-container">
-                <ul>
-                    <li>email</li>
-                    <li>phone</li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <form>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="firstName"><br>
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" name="lastName"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea>
+                </form>
             </div>
         </section>
     </main>
     <footer>
+        <!-- <ul>
+            <li>USE SVGS here</li>
+            <li>email</li>
+            <li>phone</li>
+            <li>github</li>
+            <li>treehouse profile</li>
+            <li>indeed profile</li>
+        </ul> -->
     </footer>
     <script src="js/app.js"></script>
 </body>

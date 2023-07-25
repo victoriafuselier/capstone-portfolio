@@ -1,47 +1,48 @@
 const dropdownArrowBackground = document.querySelector('#dropdown-arrow-background');
+const upArrowBackground = document.querySelector('#up-arrow-background');
+const dropdownArrowEducation = document.querySelector('#dropdown-arrow-education');
+const upArrowEducation = document.querySelector('#up-arrow-education');
+const dropdownArrowSkills = document.querySelector('#dropdown-arrow-skills');
+const upArrowSkills = document.querySelector('#up-arrow-skills');
 
 dropdownArrowBackground.addEventListener('click', () => {
     const textToDisplay = dropdownArrowBackground.parentNode.nextElementSibling;
     textToDisplay.style.display = 'block';
     dropdownArrowBackground.style.display = 'none';
+    upArrowBackground.style.display = 'block'
 });
-
-const upArrowBackground = document.querySelector('#up-arrow-background');
 
 upArrowBackground.addEventListener('click', () => {
-    const textToHide = upArrowBackground.parentNode;
+    const textToHide = upArrowBackground.parentNode.nextElementSibling;
     textToHide.style.display = 'none';
     dropdownArrowBackground.style.display = 'block';
+    upArrowBackground.style.display = 'none';
 });
-
-const dropdownArrowEducation = document.querySelector('#dropdown-arrow-education');
 
 dropdownArrowEducation.addEventListener('click', () => {
     const textToDisplay = dropdownArrowEducation.parentNode.nextElementSibling;
     textToDisplay.style.display = 'block';
     dropdownArrowEducation.style.display = 'none';
+    upArrowEducation.style.display = 'block';
 });
-
-const upArrowEducation = document.querySelector('#up-arrow-education');
 
 upArrowEducation.addEventListener('click', () => {
-    const textToHide = upArrowEducation.parentNode;
+    const textToHide = upArrowEducation.parentNode.nextElementSibling;
     textToHide.style.display = 'none';
     dropdownArrowEducation.style.display = 'block';
+    upArrowEducation.style.display = 'none';
 });
-
-const dropdownArrowSkills = document.querySelector('#dropdown-arrow-skills');
 
 dropdownArrowSkills.addEventListener('click', () => {
     const textToDisplay = dropdownArrowSkills.parentNode.nextElementSibling;
     textToDisplay.style.display = 'block';
     dropdownArrowSkills.style.display = 'none';
+    upArrowSkills.style.display = 'block';
 });
 
-const upArrowSkills = document.querySelector('#up-arrow-skills');
-
 upArrowSkills.addEventListener('click', () => {
-    const textToHide = upArrowSkills.parentNode;
+    const textToHide = upArrowSkills.parentNode.nextElementSibling;
     textToHide.style.display = 'none';
     dropdownArrowSkills.style.display = 'block';
+    upArrowSkills.style.display = 'none';
 });
