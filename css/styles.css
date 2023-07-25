@@ -142,16 +142,18 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 30px;
+    height: 50px;
     justify-content: center;
 }
 
 .dropdown-arrow,
 .up-arrow {
+    background: transparent;
+    font-size: 2rem;
+    border: none;
+    margin-left: 20px;
+    color: var(--hookers-green);
     font-weight: 900;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-left: 1rem;
 }
 
 .dropdown-arrow {
@@ -164,11 +166,11 @@ h2 {
 }
 
 .dropdown-arrow:hover {
-    transform: scale(2.3) rotate(90deg);;
+    transform: scale(1.5) rotate(90deg);;
 }
 
 .up-arrow:hover {
-    transform: scale(2.3) rotate(270deg);;
+    transform: scale(1.5) rotate(270deg);;
 }
 
 .hidden-info {
@@ -179,7 +181,7 @@ h3 {
     font-size: 1.3rem;
 }
 
-#about p, 
+#background p, 
 #education li {
     font-size: 1rem;
 }
@@ -192,6 +194,9 @@ h3 {
 
 #about {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #skills {
@@ -304,7 +309,6 @@ footer {
     overflow: hidden;
 }
 
-.photo-overlay:hover,
 .photo-overlay:focus {
     opacity: 1;
 }
@@ -426,7 +430,7 @@ textarea {
     transition: all 0.5s ease-out;
 }
 
-#send:hover {
+#send:focus {
     color: var(--hookers-green);
     background-color: white;
     border-color: var(--hookers-green);
