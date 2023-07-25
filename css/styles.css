@@ -137,6 +137,8 @@ h2 {
     max-width: 475px;
     margin: 0 auto;
     text-align: center;
+    width: 100%;
+    display: block;
 }
 
 .about-section-title {
@@ -147,35 +149,43 @@ h2 {
     justify-content: center;
 }
 
-.dropdown-arrow,
-.up-arrow {
+.dropdown-arrow {
     background: transparent;
-    font-size: 2rem;
+    font-size: 2.3rem;
     border: none;
     margin-left: 20px;
     color: var(--hookers-green);
-    font-weight: 900;
-}
-
-.dropdown-arrow {
+    font-weight: 800;
     transform: rotate(90deg);
 }
 
-.up-arrow {
-    transform: rotate(270deg);
-    display: none;
-}
-
 .dropdown-arrow:hover {
-    transform: scale(1.5) rotate(90deg);;
-}
-
-.up-arrow:hover {
-    transform: scale(1.5) rotate(270deg);;
+    transform: scale(1.5) rotate(90deg);
 }
 
 .hidden-info {
     display: none;
+    position: relative;
+    background-color: var(--yale-blue);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+}
+
+.close:hover {
+    transform: scale(1.5);
 }
 
 h3 {
@@ -185,6 +195,7 @@ h3 {
 #background p, 
 #education li {
     font-size: 1rem;
+    line-height: 2;
 }
 
 #education,
