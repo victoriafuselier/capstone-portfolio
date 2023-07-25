@@ -90,7 +90,7 @@ nav ul {
     max-width: 700px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: var(--saffron);
 }
@@ -108,9 +108,13 @@ nav li:hover {
 }
 
 main {
-    padding: 2rem 1rem 3rem;
+}
+
+main,
+#contact-container {
     max-width: 475px;
     margin: 0 auto;
+    padding: 2rem 1rem 3rem;
 }
 
 section:not(:first-of-type) {
@@ -138,7 +142,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 40px;
+    height: 30px;
     justify-content: center;
 }
 
@@ -175,19 +179,57 @@ h3 {
     font-size: 1.3rem;
 }
 
-p, li {
-    font-size: 1.1rem;
+#about p, 
+#education li {
+    font-size: 1rem;
 }
 
-#about-me ul,
+#education,
 #footer ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-#about-me li {
-    margin: 10px 0;
+#about {
     text-align: center;
+}
+
+#skills {
+    text-align: left;
+    margin-left: 20%;
+    list-style-type: square;
+    margin-top: 0;
+    color
+}
+
+#skills li {
+    font-size: .8rem;
+}
+
+.sublist {
+    list-style-type: disc;
+}
+
+.sublist-level-2 {
+    list-style-type: disclosure-closed;
+}
+
+.sublist,
+.sublist-level-2 {
+    margin-left: 6px;
+}
+
+#skills a {
+    color: var(--yale-blue);
+    text-decoration-color: var(--black-olive);
+}
+
+#skills a:visited {
+    color: var(--yale-blue);
+}
+
+#skills p {
+    font-size: .9rem;
 }
 
 footer {
@@ -283,6 +325,16 @@ footer {
     margin: 0;
 }
 
+#contact-container {
+    width: 100%;
+    background-image: url(../../capstone-portfolio/images/background-img.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    opacity: 0.6;
+}
+
 form {
     background-color: var(--rose-red);
     border-radius: 5px;
@@ -290,11 +342,13 @@ form {
     color: var(--saffron);
     max-width: 350px;
     margin: 0 auto;
+    width: 95%;
 }
 
 form h2 {
     color: var(--saffron);
     text-decoration-color: white;
+    margin: .5rem 0 1.5rem;
 }
 
 form p {
@@ -392,7 +446,11 @@ textarea {
 
 @media (min-width: 769px) {
     main {
-        max-width: 1000px;
+        max-width: 600px;
+    }
+
+    #contact-container {
+        max-width: 1200px;
     }
 
     #portfolio-container {
@@ -412,6 +470,11 @@ textarea {
     main {
         max-width: unset;
     }
+
+    #contact-container {
+        max-width: 800px;
+    }
+
 
     #banner-div {
         position: unset;
