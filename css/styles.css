@@ -272,8 +272,7 @@ footer {
 .project-photo a {
     color: var(--rose-red);
     font-weight: 500;
-    /* text-decoration: underline;
-    text-underline-offset: 5px; */
+    text-decoration: none;
     cursor: pointer;
     position: absolute;
     bottom: 5%;
@@ -324,6 +323,10 @@ footer {
     text-align: center;
     margin: 0;
 }
+
+/* .photo-overlay:hover .photo-overlay a:hover {
+    transform: scale(1.1);
+} */
 
 #contact-container {
     width: 100%;
