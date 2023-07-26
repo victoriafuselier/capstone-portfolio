@@ -50,7 +50,7 @@ body {
 #welcome-text {
     position: fixed;
     top: 10%;
-    left: 20%;
+    left: 10%;
 }
 
 #welcome-text h1 {
@@ -61,6 +61,7 @@ body {
     font-size: 1.5rem;
     margin-left: 2rem;
     width: 60%;
+    text-align: center;
 }
 
 #overlay-button {
@@ -521,7 +522,8 @@ textarea {
     color: var(--hookers-green);
     background-color: white;
     border-color: var(--hookers-green);
-    transform: scale(1.1);
+    transform: scale(1.2);
+    border-style: double;
 }
 
 footer {
