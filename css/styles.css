@@ -658,11 +658,6 @@ svg,
         height: 50px;
         width: 50px;
     }
-
-    footer p:hover:after {
-        content: '> >';
-        margin-left: 10px;
-    }
 }
 
 @media (min-width: 1025px) {
