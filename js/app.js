@@ -56,3 +56,15 @@ closeButtons.forEach(button => {
         infoDiv.style.display = 'none';
     });
 });
+
+
+
+
+const body = document.querySelector('body');
+const overlayButton = document.querySelector('#overlay-button');
+const overlayDiv = document.querySelector('#overlay');
+
+overlayButton.addEventListener('focus', () => {
+    overlayDiv.style.display = 'none';
+    body.style.overflowY = 'unset';
+});
