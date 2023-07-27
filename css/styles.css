@@ -2,7 +2,12 @@
     --dark-purple: #262A3E;
     --light-purple: #A499BE;
     --white: whitesmoke;
-    --green: mediumseagreen;
+    --button-green: mediumseagreen;
+    --dark-green: #19381F;
+    --sea-green: #4C934C;
+    --pigment-green: #53A548;
+    --yellow-green: #91CB3E;
+    --flax: #DDD78D;
 }
 
 * {
@@ -17,7 +22,6 @@ body {
     font-family: 'Fira Sans Condensed', sans-serif;
     background-size: 150% 150%;
     animation: background-flow 60s ease infinite;
-    height: 100%;
 }
 
 #overlay {
@@ -27,10 +31,11 @@ body {
     left: 0;
     bottom: 0;
     z-index: 3;
-    background-image: url(../images/clouds.jpg) ;
-    background-size: 150% 150%;
-	animation: overlay-flow 20s ease infinite;
-	height: 100%;
+    background: linear-gradient(45deg, var(--dark-green), var(--sea-green), var(--pigment-green), var(--yellow-green), var(--flax));
+    background-size: 400% 400%;
+	animation: overlay-flow 4s ease infinite;
+	height: 100vh;
+    overflow-y: hidden;
 }
 
 @keyframes overlay-flow {
@@ -38,7 +43,7 @@ body {
 		background-position: 0% 50%;
 	}
 	50% {
-		background-position: 50% 100%;
+		background-position: 100% 50%;
 	}
 	100% {
 		background-position: 0% 50%;
@@ -388,7 +393,7 @@ h3 {
 
 .project-photo a:hover {
     color: var(--white);
-    background-color: var(--green);
+    background-color: var(--button-green);
     border: 2px solid var(--white);
 }
 
@@ -539,7 +544,7 @@ textarea {
 #send:focus,
 #send:hover {
     color: var(--white);
-    background-color: var(--green);
+    background-color: var(--button-green);
     border-color: var(--white);
     transform: scale(1.2);
     border-style: double;
