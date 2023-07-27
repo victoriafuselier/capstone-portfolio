@@ -241,6 +241,10 @@ h2 {
     position: relative;
 }
 
+#about-section-title h3 {
+    margin: 10px;
+}
+
 .dropdown-arrow {
     background: transparent;
     font-size: 2rem;
