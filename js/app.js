@@ -68,3 +68,8 @@ overlayButton.addEventListener('focus', () => {
     overlayDiv.style.display = 'none';
     body.style.overflowY = 'unset';
 });
+
+overlayButton.addEventListener('click', () => {
+    overlayDiv.style.display = 'none';
+    body.style.overflowY = 'unset';
+});
