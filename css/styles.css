@@ -34,8 +34,7 @@ body {
     background: linear-gradient(45deg, var(--dark-green), var(--sea-green), var(--pigment-green), var(--yellow-green), var(--flax));
     background-size: 400% 400%;
 	animation: overlay-flow 4s ease infinite;
-	height: 100vh;
-    overflow-y: hidden;
+	height: 100%;
 }
 
 @keyframes overlay-flow {
@@ -520,7 +519,7 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    box-shadow: 0 0 3px 5px var(--dark-purple);
+    box-shadow: 0 0 7px 5px var(--dark-purple);
 }
 
 textarea {
