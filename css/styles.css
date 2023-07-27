@@ -237,7 +237,7 @@ h2 {
     width: 100px;
     margin: 0 auto;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
 }
 
@@ -248,9 +248,7 @@ h2 {
     color: var(--white);
     font-weight: 800;
     transform: rotate(90deg);
-    display: block;
-    position: absolute;
-    right: -35px;
+    margin-left: 15px;
 }
 
 .dropdown-arrow:hover {
