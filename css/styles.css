@@ -301,7 +301,7 @@ h3 {
     line-height: 1.2;
 }
 
-.hidden-info p, {
+.hidden-info p {
     font-weight: 600;
     font-size: 1.4rem;
 }
@@ -464,7 +464,7 @@ h3 {
 form {
     background-color: var(--light-purple);
     border-radius: 5px;
-    padding: 20px 20px 30px;
+    padding: 20px 10px 30px;
     max-width: 350px;
     max-height: 552px;
     margin: 0 auto;
@@ -536,7 +536,7 @@ textarea {
 }
 
 #send {
-    width: 70%;
+    width: 80%;
     margin: 25px auto 0;
     padding: 5px 10px;
     background-color: var(--dark-purple);
@@ -770,4 +770,8 @@ svg {
         font-size: 1.1rem;
         padding: 0;
     }
+}
+
+h1 {
+    color: var(--sea-green);
 }
