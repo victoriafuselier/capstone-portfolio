@@ -604,15 +604,10 @@ svg,
 }
 
 svg {
-    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-}
-
-.footer-links {
-    position: relative;
 }
 
 .github, 
@@ -630,7 +625,9 @@ svg {
 }
 
 .footer-links:hover,
-.footer-links:focus {
+.footer-links:focus,
+svg:hover,
+svg:focus {
     transform: rotate(30deg) scale(1.2);
 }
 
