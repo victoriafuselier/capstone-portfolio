@@ -50,9 +50,3 @@ overlayButton.addEventListener('click', () => {
     overlayDiv.style.display = 'none';
     body.style.overflowY = 'unset';
 });
-
-const form = document.querySelector('form');
-
-form.addEventListener('submit', () => {
-    alert('Thanks! Your message has been sent!');
-});
