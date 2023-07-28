@@ -707,9 +707,8 @@ svg:focus {
         width: 50px;
     }
 
-    .footer-links svg,
-    .footer-links {
-        margin-left: 2rem;
+    #footer-list li {
+        margin-left: 3rem;
     }
 }
 
