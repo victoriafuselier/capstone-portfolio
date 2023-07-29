@@ -387,7 +387,7 @@ h3 {
     margin: 0 auto;
 }
 
-.project-container:not(:last-of-type) {
+.project-container {
 	text-align: center;
 	margin-bottom: 1rem;
 }
@@ -483,6 +483,16 @@ h3 {
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--dark-purple);
+    text-align: center;
+}
+
+#portfolio-footer-div a {
+    color: var(--dark-purple);
+}
+
+#portfolio-footer-div a:visited {
     color: var(--dark-purple);
 }
 
