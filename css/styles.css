@@ -46,7 +46,7 @@ body {
     z-index: 3;
     position: absolute;
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
     box-shadow: 5px 5px 18px rgba(230, 230, 250, 0.5), -5px -5px 18px rgba(230, 230, 250, 0.5);
 }
 
