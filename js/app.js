@@ -13,7 +13,7 @@ dropdownArrowBackground.addEventListener('click', () => {
     }
 
     popUpDiv.innerHTML = `<div id='pop-up-box'>
-                            <button class="close">x</button>
+                            <button class="close" role="button" tabindex="0">x</button>
                             <p>I'm an aspiring web developer in search of an entry-level position in front-end web development. I really enjoy designing beautiful web pages and letting my perfectionist <em>and</em> my creative side run wild with layout, formatting, color schemes, aesthetics, fun JavaScript functionality, etc.</p>
                             <p>I'm striving for a career that will be interesting, stable, challenging, and fulfilling. My strengths include straightforward and respectful communication, grammar and writing proficiency, and a good eye for design.</p>
                             <p>I look forward to working in a team-oriented, fun, and challenging workplace environment. If I sound like a good fit for your team, please add me to your contacts list and feel free to shoot me a message below! (The form works.. Don't worry--I double-checked)</p>
@@ -26,7 +26,7 @@ dropdownArrowEducation.addEventListener('click', () => {
     }
     
     popUpDiv.innerHTML = `<div id='pop-up-box'>
-                            <button class="close">x</button>
+                            <button class="close" role="button" tabindex="0">x</button>
                             <ul id="education">
                                 <li>Louisiana State University: Bachelor's Degree</li>
                                 <li>FreeCodeCamp</li>
@@ -42,7 +42,7 @@ dropdownArrowSkills.addEventListener('click', () => {
     }
     
     popUpDiv.innerHTML =    `<div id='pop-up-box'>
-                                <button class="close">x</button>
+                                <button class="close" role="button" tabindex="0">x</button>
                                 <ul id="skills">
                                     <li>HTML</li>
                                     <li>CSS</li>
