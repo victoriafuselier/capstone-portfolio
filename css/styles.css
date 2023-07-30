@@ -125,7 +125,6 @@ body {
     font-size: 1.5rem;
     color: var(--dark-purple);
     font-weight: 600;
-    transition-property: 'transform';
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
 }
@@ -608,7 +607,6 @@ footer p {
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 600;
-    transition-property: 'transform';
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
 }
