@@ -390,17 +390,11 @@ h3 {
 .project-container img,
 .photo-overlay {
     max-width: 100%;
-    border: 8px solid var(--dark-purple);
 }
 
 .project-photo {
 	position: relative;
 	overflow: hidden;
-}
-
-.project-container:focus,
-.project-container:hover {
-    box-shadow: 5px 5px 18px rgba(255, 255, 255, 0.8), -5px -5px 18px rgba(255, 255, 255, 0.8);
 }
 
 .project-photo a {
@@ -428,7 +422,7 @@ h3 {
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 0; 
+	bottom: 4px; 
 	left: 0;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -443,9 +437,10 @@ h3 {
     overflow: hidden;
 }
 
-.photo-overlay:focus,
-.photo-overlay:hover {
+.project-container:focus .photo-overlay,
+.project-container:hover .photo-overlay {
     opacity: 1;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.8), -5px -5px 18px rgba(0, 0, 0, 0.8);
 }
 
 .photo-overlay h3 {

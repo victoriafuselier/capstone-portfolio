@@ -123,3 +123,20 @@ overlayButton.addEventListener('click', () => {
     overlayDiv.style.display = 'none';
     body.style.overflowY = 'unset';
 });
+
+///////////////////////////////////////////////////////////////////////
+//                        PROJECT LINKS                             //
+//////////////////////////////////////////////////////////////////////
+
+const projectLinks = document.querySelectorAll('.project-links');
+
+projectLinks.forEach(link => {
+    link.addEventListener('focus', (e) => {
+        let photoOverlay = e.target.parentNode;
+        photoOverlay.style.opacity = 1;
+    });
+    link.addEventListener('focusout', (e) => {
+        let photoOverlay = e.target.parentNode;
+        photoOverlay.style.opacity = 0;
+    });
+});
