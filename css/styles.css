@@ -67,22 +67,22 @@ body {
     left: 0;
     bottom: 0;
     z-index: 3;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-	animation: backgroundFlow 15s ease infinite;
+	animation: overlayFlow 15s ease infinite;
 	height: 100%;
     overflow-y: hidden;
 }
 
 @keyframes overlayFlow {
 	0% {
-		background-position: 0% 50%;
+		background-position: 50% 0%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 50% 100%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 50% 0%;
 	}
 }
 
