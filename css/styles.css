@@ -479,6 +479,7 @@ h3 {
 
 #portfolio-footer-div a {
     color: var(--dark-purple);
+    z-index: 5;
 }
 
 a {

@@ -102,6 +102,7 @@ dropdownArrowSkills.addEventListener('click', () => {
 popUpDiv.addEventListener('click', (e) => {
     if (e.target.classList.contains('close')) {
         popUpDiv.classList.add('hide');
+        popUpDiv.innerHTML = ``;
     }
 });
 
