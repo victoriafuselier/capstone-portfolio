@@ -151,20 +151,3 @@ projectLinks.forEach(link => {
         photoOverlay.style.opacity = 0;
     });
 });
-
-///////////////////////////////////////////////////////////////////////
-//                      PROJECT OVERLAY                             //
-//////////////////////////////////////////////////////////////////////
-
-const projectContainers = document.querySelectorAll('.project-container');
-
-projectContainers.forEach(container, () => {
-    container.addEventListener('mouseover', (e)=> {
-        let photoOverlay = e.target.querySelector('.photo-overlay');
-        photoOverlay.style.opacity = '1';
-    });
-    container.addEventListener('mouseout', (e) => {
-        let photoOverlay = e.target.querySelector('.photo-overlay');
-        photoOverlay.style.opacity = '0';
-    });
-});
