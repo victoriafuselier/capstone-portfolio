@@ -129,7 +129,7 @@ button,
     right: 15%;
     border: none;
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--dark-purple);
     font-weight: 600;
     transition-duration: .5s;
@@ -412,6 +412,7 @@ h3 {
 .project-photo a {
     color: var(--dark-purple);
     font-weight: 500;
+    font-size: .9rem;
     text-decoration: none;
     cursor: pointer;
     position: absolute;
@@ -450,21 +451,20 @@ h3 {
 }
 
 .photo-overlay h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0;
     position: absolute;
-    top: 10%;
+    top: 7%;
 }
 
 .photo-overlay p {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
-    width: fit-content;
+    width: 98%;
     max-width: 98%;
     text-align: center;
-    letter-spacing: .5px;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 #portfolio-footer-div {
@@ -686,10 +686,6 @@ svg:focus {
 
 @media (min-width: 768px) {
 
-    #overlay-button {
-        font-size: 2.5rem;
-    }
-
     main {
         max-width: 700px;
     }
@@ -763,10 +759,6 @@ svg:focus {
     
     #welcome-text p {
         font-size: 1.5rem;
-    }
-    
-    #overlay button {
-        font-size: 3rem;
     }
     
     main {
