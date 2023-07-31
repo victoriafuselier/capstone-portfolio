@@ -33,7 +33,7 @@ body {
 
 #pop-up-div {
     width: 95%;
-    height: 100%;
+    height: 0px;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -49,7 +49,7 @@ body {
     border: 3px solid var(--dark-purple);
     border-radius: 5px;
     padding: 2rem;
-    z-index: 3;
+    z-index: 2;
     position: absolute;
     margin: 0 auto;
     width: 100%;
@@ -73,7 +73,7 @@ button,
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 3;
+    z-index: 4;
     background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
 	animation: overlayFlow 15s ease infinite;
@@ -185,7 +185,7 @@ nav li,
     padding: 0.5rem;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -416,10 +416,10 @@ h3 {
     text-decoration: none;
     cursor: pointer;
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     background-color: var(--white);
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 3px 15px;
     transition: all .25s ease-out;
 }
 
@@ -435,7 +435,7 @@ h3 {
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 4px; 
+	bottom: 3px; 
 	left: 0;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -454,7 +454,7 @@ h3 {
     font-size: 1.2rem;
     margin: 0;
     position: absolute;
-    top: 7%;
+    top: 10%;
 }
 
 .photo-overlay p {
@@ -479,7 +479,6 @@ h3 {
 
 #portfolio-footer-div a {
     color: var(--dark-purple);
-    z-index: 5;
 }
 
 a {
@@ -502,7 +501,7 @@ a:visited {
 form {
     background-color: var(--light-purple);
     border-radius: 5px;
-    padding: 20px 20px 30px;
+    padding: 10px 10px 30px;
     max-width: 450px;
     margin: 0 auto;
     width: 95%;
@@ -684,6 +683,20 @@ svg:focus {
                         Media Queries
 ============================================================= */
 
+@media (min-width: 400px) {
+    .photo-overlay h3 {
+        font-size: 1.5rem;
+    }
+
+    .photo-overlay p {
+        font-size: 1.1rem;
+    }
+
+    .photo-overlay a {
+        font-size: 1.1rem;
+    }
+}
+
 @media (min-width: 768px) {
 
     main {
@@ -797,4 +810,12 @@ svg:focus {
         font-size: 1.1rem;
         padding: 0;
     }
+}
+
+@media (min-width: 1200px) {
+
+    .photo-overlay p {
+        font-size: 1.2rem;
+    }
+
 }
