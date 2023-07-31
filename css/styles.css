@@ -74,9 +74,9 @@ button,
     left: 0;
     bottom: 0;
     z-index: 4;
-    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+    background: linear-gradient(90deg, var(--chestnut), #ee7752, var(--flax), var(--asparagus), #23a6d5, var(--light-purple), var(--light-purple), #23a6d5, var(--asparagus), var(--flax), #ee7752, var(--chestnut));
     background-size: 400% 400%;
-	animation: overlayFlow 15s ease infinite;
+	animation: overlayFlow 15s ease-in-out infinite;
 	height: 100%;
     overflow-y: hidden;
 }
