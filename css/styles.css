@@ -184,7 +184,12 @@ nav li,
     text-transform: uppercase;
 }
 
-#banner-div {
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     font-size: 1rem;
     font-weight: 600;
     background-color: var(--light-purple);
@@ -196,14 +201,6 @@ nav li,
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 nav ul {
@@ -229,10 +226,6 @@ nav li {
 nav li:hover,
 nav li:focus {
     transform: scale(1.3);
-}
-
-#quote {
-    display: none;
 }
 
 main {
@@ -788,18 +781,8 @@ svg:focus {
         max-width: 800px;
     }
 
-    #banner-div {
-        position: unset;
-    }
-
-    nav {
-        display: none;
-    }
-
-    #quote {
-        display: block;
-        font-size: 1.2rem;
-        font-weight: 500;
+    nav ul {
+        max-width: 700px;
     }
 
     .project-container {
