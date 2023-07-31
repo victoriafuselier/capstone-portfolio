@@ -74,7 +74,7 @@ button,
     left: 0;
     bottom: 0;
     z-index: 4;
-    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #23a6d5, #e73c7e, #ee7752);
     background-size: 400% 400%;
 	animation: overlayFlow 15s ease infinite;
 	height: 100%;
@@ -83,14 +83,20 @@ button,
 
 @keyframes overlayFlow {
 	0% {
-		background-position: 50% 0%;
+		background-position: left;
+	}
+    25% {
+		background-position: center;
 	}
 	50% {
-		background-position: 50% 100%;
+		background-position: right;
 	}
-	100% {
-		background-position: 50% 0%;
-	}
+    75% {
+        background-position: center;
+    }
+    100% {
+        background-position: left;
+    }
 }
 
 @keyframes backgroundFlow {
