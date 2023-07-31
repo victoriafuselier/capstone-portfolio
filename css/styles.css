@@ -781,6 +781,10 @@ svg:focus {
         max-width: 800px;
     }
 
+    nav {
+        position: relative;
+    }
+
     nav ul {
         max-width: 700px;
     }
