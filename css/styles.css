@@ -426,7 +426,7 @@ h3 {
 .project-photo a:hover,
 .project-photo a:focus {
     color: var(--white);
-    background-color: var(--button-green);
+    background-color: var(--sea-green);
     border: 2px solid var(--white);
 }
 
@@ -579,7 +579,7 @@ textarea {
     margin: 0 auto;
     padding: 5px 10px;
     background-color: var(--dark-purple);
-    color: var(--charcoal);
+    color: var(--white);
     font-size: 1.3rem;
     font-weight: 500;
     border-radius: 10px;
@@ -590,7 +590,7 @@ textarea {
 #send:focus,
 #send:hover {
     color: var(--white);
-    background-color: var(--button-green);
+    background-color: var(--sea-green);
     border-color: var(--white);
     transform: scale(1.2);
     border-style: double;

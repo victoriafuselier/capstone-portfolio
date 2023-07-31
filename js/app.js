@@ -13,11 +13,14 @@ dropdownArrowBackground.addEventListener('click', () => {
     }
 
     popUpDiv.innerHTML = `<div id='pop-up-box'>
-                            <button class="close" role="button" tabindex="0">x</button>
+                            <button class="close">x</button>
                             <p>I'm an aspiring web developer in search of an entry-level position in front-end web development. I really enjoy designing beautiful web pages and letting my perfectionist <em>and</em> my creative side run wild with layout, formatting, color schemes, aesthetics, fun JavaScript functionality, etc.</p>
                             <p>I'm striving for a career that will be interesting, stable, challenging, and fulfilling. My strengths include straightforward and respectful communication, grammar and writing proficiency, and a good eye for design.</p>
                             <p>I look forward to working in a team-oriented, fun, and challenging workplace environment. If I sound like a good fit for your team, please add me to your contacts list and feel free to shoot me a message below! (The form works.. Don't worry--I double-checked)</p>
                         </div>`;
+
+    let closeButton = document.querySelector('.close');
+    closeButton.focus();
 });
 
 dropdownArrowEducation.addEventListener('click', () => {
@@ -26,7 +29,7 @@ dropdownArrowEducation.addEventListener('click', () => {
     }
     
     popUpDiv.innerHTML = `<div id='pop-up-box'>
-                            <button class="close" role="button" tabindex="0">x</button>
+                            <button class="close">x</button>
                             <ul id="education">
                                 <li>Louisiana State University: Bachelor's Degree</li>
                                 <li>FreeCodeCamp</li>
@@ -34,6 +37,9 @@ dropdownArrowEducation.addEventListener('click', () => {
                                 <li>Treehouse: Front-End Web Development Techdegree</li>
                             </ul>
                         </div>`;
+
+    let closeButton = document.querySelector('.close');
+    closeButton.focus();
 });
 
 dropdownArrowSkills.addEventListener('click', () => {
@@ -42,7 +48,7 @@ dropdownArrowSkills.addEventListener('click', () => {
     }
     
     popUpDiv.innerHTML =    `<div id='pop-up-box'>
-                                <button class="close" role="button" tabindex="0">x</button>
+                                <button class="close">x</button>
                                 <ul id="skills">
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -94,8 +100,11 @@ dropdownArrowSkills.addEventListener('click', () => {
                                             <li>SQL</li>
                                         </ul>
                                 </ul>
-                                <p>Check out my <a tabindex="7" href="https://teamtreehouse.com/profiles/victoriafuselier" target="_blank">Treehouse Profile</a> to see what I've been up to and what I'm currently learning!</p>
+                                <p>Check out my <a tabindex="0" href="https://teamtreehouse.com/profiles/victoriafuselier" target="_blank">Treehouse Profile</a> to see what I've been up to and what I'm currently learning!</p>
                             </div>`;
+
+    let closeButton = document.querySelector('.close');
+    closeButton.focus();                            
 });
 
 
