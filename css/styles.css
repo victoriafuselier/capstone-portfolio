@@ -540,11 +540,6 @@ label {
     color: var(--dark-purple);
 }
 
-#firstName,
-#lastName {
-    width: 60%;
-}
-
 input,
 textarea {
     border-radius: 5px;
