@@ -16,6 +16,19 @@
     --yellow-green: #91CB3E;
     --flax: #DDD78D;
     --chestnut: #A24936;
+    --periwinkle: #C4C6E7;
+    --asparagus: #6DA34D;
+    --indian-red: #C46D5E;
+    --sunset: #F3C98B;
+    --gunmetal: #19323C;
+    --redwood: #A15E49;
+    --persian-orange: #CA895F;
+    --citron: #E3D26F;
+    --columbia-blue: #C9DAEA;
+    --cordovan: #9C3848;
+    --fern-green: #618B4A;
+    --sage-green: #AFBC88;
+    --falu-green: #7B2D26;
 }
 
 * {
@@ -229,7 +242,7 @@ nav li:focus {
 }
 
 main {
-    color: var(--white);
+    color: var(--dark-purple);
     position: relative;
 }
 
@@ -251,7 +264,8 @@ main,
     width: 100%;
     display: block;
     padding: 2rem;
-    background-color: var(--dark-purple);
+    background-color: var(--periwinkle);
+    color: var(--dark-purple);
 }
 
 #about,
@@ -269,7 +283,7 @@ h2 {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    text-decoration-color: var(--white);
+    text-decoration-color: var(--dark-purple);
     font-size: 1.7rem;
     margin: 0 0 1.5rem;
 }
@@ -293,7 +307,7 @@ h2 {
     background: transparent;
     font-size: 2rem;
     border: none;
-    color: var(--white);
+    color: var(--dark-purple);
     font-weight: 800;
     transform: rotate(90deg);
     margin-left: 25px;
@@ -366,7 +380,7 @@ h3 {
 }
 
 #portfolio {
-    background-color: var(--light-purple);
+    background-color: var(--periwinkle);
     padding: 2rem 1rem 1rem;
 }
 
@@ -498,14 +512,14 @@ a:visited {
 }
 
 form {
-    background-color: var(--light-purple);
+    background-color: var(--periwinkle);
     border-radius: 5px;
     padding: 10px 10px 30px;
-    max-width: 450px;
+    max-width: 350px;
     margin: 0 auto;
     width: 95%;
-    border: 3px solid var(--dark-purple);
-    height: 575px;
+    /* border: 3px solid var(--dark-purple); */
+    height: auto;
 }
 
 form h2 {
@@ -544,7 +558,7 @@ input,
 textarea {
     border-radius: 5px;
     background-color: var(--white);
-    border: none;
+    border: 2px solid var(--dark-purple);
     padding: 5px;
     font-size: 1.1rem;
     line-height: 1.1;
@@ -572,12 +586,12 @@ textarea {
     width: 80%;
     margin: 0 auto;
     padding: 5px 10px;
-    background-color: var(--dark-purple);
+    background-color: var(--dark-green);
     color: var(--white);
     font-size: 1.3rem;
     font-weight: 500;
     border-radius: 10px;
-    border: 3px solid var(--dark-purple);
+    border: 5px solid var(--dark-green);
     transition: all 0.5s ease-out;
 }
 
@@ -586,7 +600,7 @@ textarea {
     color: var(--white);
     background-color: var(--dark-green);
     border-color: var(--white);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     border-style: double;
     border-width: 5px;
 }
@@ -712,6 +726,10 @@ svg:focus {
 		width: 47%;
 		float: left;
 	}
+
+    nav {
+        display: none;
+    }
 
     /* footer {
         flex-direction: row;
